@@ -1,0 +1,82 @@
+
+/* Single Post */
+.link .usertext-body .md {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.panestack-title {
+    margin: 15px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(86, 103, 118, 0.5);
+    color:white;
+}
+
+.new-comment .md :not(pre)>code,
+.link .md :not(pre)>code,
+.usertext.border .md :not(pre)>code,
+.new-comment .md pre,
+.link .md pre,
+.usertext.border .md pre {
+    border: 1px solid #7b7b7b;
+    background-color: #5a5a5a;
+    border-radius: 2px;
+}
+
+.commentarea{
+    padding: 10px;
+}
+.commentarea .menuarea {
+    border: none;
+    margin: 0px 0px 15px 0;
+    padding: 0;
+    color: gray;
+}
+
+/*.menuarea {
+    border-bottom: 1px dotted gray;
+    padding: 5px 10px;
+    margin: 5px;
+    overflow: hidden;
+    font-size: larger;
+}*/
+
+.commentarea>.usertext {
+    margin: 10px 0;
+}
+
+.new-comment .usertext-body {
+    background:none;
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+
+.usertext.border .usertext-body {
+    background-color: transparent;
+    padding: 5px;
+}
+
+.comment {
+    padding-left:10px;
+}
+
+.comment.new-comment{
+    border-left: 3px solid rgba(0,204,51,0.75);
+    padding-left: 10px;
+}
+
+
+.commentarea .comment-visits-box {
+    color: white;
+    margin: 15px 0;
+    padding: 10px;
+    max-width: none;
+    display: inline-block;
+    background-color: rgba(45, 53, 137, 0.6);
+    border: solid 1px #4c5182;
+}
+.rounded {
+    border-radius: 2px;
+}

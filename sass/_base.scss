@@ -1,0 +1,68 @@
+/**************
+ *
+ * Base
+ *
+ **************/
+ body{
+    background-image:url(%%IE-Blurred-BG%%);
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 1030px;
+}
+
+a {
+    text-decoration: none;
+    color: #829bae;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+.usertext button {
+    /*margin: 5px 5px 10px 0;*/
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height:1.4;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: rgba(171,207,231,0.25);
+    border: 1px solid rgba(171,207,231,0.5);
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: rgba(131,184,220,0.25);
+    border-color: rgba(123,180,217,0.5);
+}
+button[name="save"]{
+    background-color: rgba(0,204,51,0.75);
+    border:1px solid rgba(0,204,51,0.5);
+}
+button[name="save"]:hover{
+    background-color: rgba(0,153,38,0.75);
+    border-color: rgba(0,143,36,0.5);
+}
+
+.infobar {
+    background-color: #2f348e;
+    border-color: #55599c;
+    color: white;
+}
+
+#searchexpando {
+    margin: 0px 0 0 0;
+    border-radius: 0 0 2px 2px;
+}
