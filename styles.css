@@ -586,6 +586,14 @@ input:focus {
   margin-bottom: 8px;
   box-sizing: border-box;
 }
+.content .link::before {
+  content: " ";
+  position: absolute;
+  left: 47px;
+  min-height: calc(100% - 30px);
+  width: 1px;
+  background-color: rgba(123, 180, 217, 0.2);
+}
 
 body > .content .link .rank,
 .rank-spacer {
@@ -593,30 +601,40 @@ body > .content .link .rank,
 }
 
 .link .rank {
-  padding: 35px 10px;
+  padding: 0px 10px;
   margin: 0;
-  border-right: 1px solid rgba(86, 103, 118, 0.5);
   text-align: center;
+  line-height: 86px;
 }
 
 .link .midcol {
-  margin-top: 20px;
+  margin: 17px 15px 0;
 }
 
 .link .thumbnail {
-  margin-top: 15px;
+  position: relative;
+  height: 70px;
+  margin: 8px 15px 8px 0;
+}
+.link .thumbnail img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.link .thumbnail.self {
+  height: 70px;
+  background-image: url(%%iracing-snoo-post%%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .entry {
   overflow: initial;
-  margin-left: 0px;
+  margin-left: 183px;
 }
 
 .link p.title {
-  /*font-size: 18px;*/
-  margin-top: 25px;
-  margin-right: 60px;
-  min-height: 65px;
+  margin: 25px 60px 0 0;
 }
 
 .link a.title {
@@ -625,7 +643,7 @@ body > .content .link .rank,
 }
 
 .link a.title:hover {
-  color: #eee;
+  color: #bbb;
   text-decoration: none;
 }
 
@@ -643,14 +661,7 @@ body > .content .link .rank,
 
 .link .tagline {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  /*left: 0;*/
-  /*width: 100%;*/
-  /*text-align: right;*/
-  /*border-bottom: 1px solid #2e363f;*/
+  padding: 5px 0;
 }
 
 .expando-button {
@@ -665,9 +676,9 @@ body > .content .link .rank,
 
 .expando {
   /*clear: left;*/
-  margin: 0;
+  margin: 0 0 0 -127px;
   padding: 5px 15px;
-  border-top: 1px solid rgba(171, 207, 231, 0.5);
+  border-top: 1px solid rgba(171, 207, 231, 0.2);
 }
 
 .link.promotedlink.promoted,
@@ -680,13 +691,6 @@ body > .content .link .rank,
   overflow: initial;
 }
 
-.thumbnail.self {
-  height: 55px;
-  background-image: url(%%iracing-snoo-post%%);
-  background-repeat: no-repeat;
-  background-position: initial;
-}
-
 .link .flat-list {
   box-sizing: border-box;
   position: absolute;
@@ -695,7 +699,7 @@ body > .content .link .rank,
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
   border-top: 1px solid rgba(86, 103, 118, 0.5);
-  padding: 6px 0 6px 20px;
+  padding: 6px 0 6px 55px;
 }
 
 .link.last-clicked .flat-list {
@@ -718,13 +722,26 @@ body > .content .link .rank,
   text-decoration: none;
 }
 
-/* Single Post */
-.link .usertext-body .md {
+/* Single Page */
+.single-page .link::before {
+  content: none;
+}
+.single-page .link .usertext-body .md {
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
+.single-page .link .entry {
+  margin-left: 0;
+}
+.single-page .link .flat-list {
+  padding-left: 15px;
+}
+.single-page .expando {
+  margin-left: 0;
+}
 
+/* Comment Area Title */
 .panestack-title {
   margin: 15px 0px;
   padding-bottom: 10px;
@@ -779,6 +796,10 @@ body > .content .link .rank,
 
 .comment {
   padding-left: 10px;
+}
+
+.comment .entry {
+  margin-left: 0;
 }
 
 .comment.new-comment {

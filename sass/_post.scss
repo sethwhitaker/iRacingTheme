@@ -1,11 +1,30 @@
 
-/* Single Post */
-.link .usertext-body .md {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
+/* Single Page */
+
+.single-page {
+    .link {
+        &::before{
+            content:none;
+        }
+        .usertext-body .md {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+        }
+        .entry{
+            margin-left: 0;
+        }
+        .flat-list{
+            padding-left:15px;
+        }
+
+    }
+    .expando{
+        margin-left:0;
+    }
 }
 
+/* Comment Area Title */
 .panestack-title {
     margin: 15px 0px;
     padding-bottom: 10px;
@@ -60,6 +79,10 @@
 
 .comment {
     padding-left:10px;
+}
+
+.comment .entry {
+    margin-left:0;
 }
 
 .comment.new-comment{
