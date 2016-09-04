@@ -173,6 +173,9 @@
 
 .morelink a {
     color: #fff;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 .morelink .nub {

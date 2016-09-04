@@ -328,6 +328,7 @@ textarea:focus {
   color: #d3e6f2;
   background-color: rgba(131, 184, 220, 0.25);
   border-color: rgba(123, 180, 217, 0.5);
+  text-decoration: none;
 }
 
 /* #header-bottom-right */
@@ -541,6 +542,9 @@ textarea:focus {
 
 .morelink a {
   color: #fff;
+}
+.morelink a:hover {
+  text-decoration: none;
 }
 
 .morelink .nub {
