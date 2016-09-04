@@ -194,3 +194,33 @@
     font-size: normal;
     border-radius: 0px;
 }
+
+.sidecontentbox {
+    background-color: rgba(45,52,140,0.3);
+    padding: 8px 10px;
+    border: 1px solid rgb(113, 136, 151);
+    border-radius: 2px;
+    .title h1 {
+        display: inline;
+        text-transform: lowercase;
+        margin: 0;
+        color: white;
+        font-size: 180%;
+    }
+    .collapse-button {
+        line-height: 8px;
+        background: #eee;
+        color: #333;
+        border: 1px solid #999;
+        border-radius: 2px;
+        margin: 3px 8px;
+    }
+    .content {
+        border: none;
+        padding: 10px 0 0;
+    }
+}
+
+.sidebox.create .spacer {
+    background: transparent;
+}
