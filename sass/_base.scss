@@ -64,10 +64,20 @@ button[name="save"]:hover{
 }
 
 .infobar,
+.reddit-infobar,
 .content.submit .info-notice {
-    background-color: #2f348e;
+    background-color: $info-bg;
     border-color: #55599c;
     color: white;
+}
+.content.submit .info-notice {
+    max-width: 540px;
+}
+
+.reddit-infobar{
+    .md{
+        color:white;
+    }
 }
 
 #searchexpando {

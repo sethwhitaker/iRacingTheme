@@ -69,9 +69,18 @@ button[name="save"]:hover {
 }
 
 .infobar,
+.reddit-infobar,
 .content.submit .info-notice {
-  background-color: #2f348e;
+  background-color: rgba(45, 53, 137, 0.6);
   border-color: #55599c;
+  color: white;
+}
+
+.content.submit .info-notice {
+  max-width: 540px;
+}
+
+.reddit-infobar .md {
   color: white;
 }
 
@@ -825,6 +834,12 @@ body > .content .link .rank,
   border: 1px solid #7b7b7b;
   background-color: #5a5a5a;
   border-radius: 2px;
+}
+
+.usertext thead tr:first-child,
+.usertext .markhelp tr:first-child {
+  border: 1px solid #fff !important;
+  background-color: rgba(45, 53, 137, 0.6) !important;
 }
 
 .commentarea {

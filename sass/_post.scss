@@ -42,6 +42,12 @@
     background-color: #5a5a5a;
     border-radius: 2px;
 }
+.usertext thead tr:first-child,
+.usertext .markhelp tr:first-child{
+    // width: 50%;
+    border: 1px solid #fff !important;
+    background-color: $info-bg !important;
+}
 
 .commentarea{
     padding: 10px;
