@@ -117,9 +117,61 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
-#search input:focus {
-  background: rgba(0, 0, 0, 0.7);
-  outline: none;
+/* Linefield & Roundfield */
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield input[type=password],
+.roundfield input[type=number] {
+  font-size: 100%;
+  width: 100%;
+  max-width: 540px;
+  padding: 5px;
+  margin: 0;
+  border: 1px solid rgba(171, 207, 231, 0.5);
+  border-radius: 2px;
+}
+
+.roundfield,
+.linefield {
+  width: 100%;
+  padding: 0px;
+  font-size: 16px;
+  background-color: transparent;
+  margin-bottom: 8px;
+  border: none;
+}
+.roundfield.mobile,
+.linefield.mobile {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.roundfield > .title,
+.linefield > .title {
+  display: inline-block;
+  color: white;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.roundfield > .roundfield-content,
+.roundfield > .linefield-content,
+.linefield > .roundfield-content,
+.linefield > .linefield-content {
+  padding: 0px;
+}
+
+.formtabs-content {
+  width: 100%;
+  max-width: 540px;
+  border: 1px solid rgba(171, 207, 231, 0.5);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.submit.content {
+  margin: 0;
 }
 
 /**************
@@ -848,45 +900,4 @@ body > .content .link .rank,
 
 .error {
   color: #f1202b;
-}
-
-/* Linefield */
-.roundfield,
-.linefield {
-  width: 100%;
-  max-width: 540px;
-  padding: 20px;
-  font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 8px;
-  border: 1px solid rgba(171, 207, 231, 0.5);
-}
-.roundfield.mobile,
-.linefield.mobile {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(171, 207, 231, 0.5);
-}
-.roundfield .title,
-.linefield .title {
-  display: inline-block;
-  color: white;
-  padding: 0;
-  margin-bottom: 10px;
-}
-.roundfield .roundfield-content,
-.roundfield .linefield-content,
-.linefield .roundfield-content,
-.linefield .linefield-content {
-  padding: 0px;
-}
-
-.formtabs-content {
-  width: 100%;
-  border-top: 1px solid rgba(171, 207, 231, 0.5);
-  padding-top: 15px;
-}
-
-.submit.content {
-  margin: 0;
 }
