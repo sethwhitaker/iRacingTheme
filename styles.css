@@ -749,6 +749,12 @@ body > .content .link .rank,
   padding: 5px 0;
 }
 
+.link .usertext-body .md {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+}
+
 .expando-button {
   position: absolute;
   /*    height: 23px;
@@ -810,11 +816,6 @@ body > .content .link .rank,
 /* Single Page */
 .single-page .link::before {
   content: none;
-}
-.single-page .link .usertext-body .md {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
 }
 .single-page .link .entry {
   margin-left: 0;

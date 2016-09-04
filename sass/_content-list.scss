@@ -96,6 +96,11 @@ body >.content .link .rank,
     // text-align: right;
     // border-bottom: 1px solid #2e363f;
 }
+.link .usertext-body .md {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
 
 .expando-button {
     position: absolute;
