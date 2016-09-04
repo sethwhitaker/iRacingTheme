@@ -848,7 +848,7 @@ body > .content .link .rank,
 }
 
 .md hr {
-  background: #abcfe7;
+  background: rgba(171, 207, 231, 0.5);
   height: 1px;
   margin: 10px 0;
 }
