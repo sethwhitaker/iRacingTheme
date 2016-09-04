@@ -493,6 +493,10 @@ textarea:focus {
   top: 255px;
 }
 
+.titlebox h1 {
+  font-family: inherit;
+}
+
 .fancy-toggle-button .add {
   background-image: none;
   background-color: rgba(0, 204, 51, 0.75);
@@ -601,6 +605,18 @@ textarea:focus {
 
 .sidebox.create .spacer {
   background: transparent;
+}
+
+.single-page .side {
+  padding-top: 405px;
+}
+
+.linkinfo {
+  position: absolute;
+  top: 310px;
+  border-top: 1px solid rgba(171, 207, 231, 0.5);
+  width: 300px;
+  padding-top: 15px;
 }
 
 /***************
