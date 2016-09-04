@@ -653,6 +653,8 @@ textarea:focus {
 
 .md hr {
   background: #abcfe7;
+  height: 1px;
+  margin: 10px 0;
 }
 
 /***************
