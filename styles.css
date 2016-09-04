@@ -315,6 +315,7 @@ textarea:focus {
   border-radius: 4px;
   color: white;
   position: relative;
+  width: 342px;
 }
 
 .side:before {
@@ -610,7 +611,7 @@ textarea:focus {
 
 body > .content .link .rank,
 .rank-spacer {
-  width: 3.2ex !important;
+  width: 47px !important;
 }
 
 .link .rank {
@@ -689,7 +690,7 @@ body > .content .link .rank,
 
 .expando {
   /*clear: left;*/
-  margin: 0 0 0 -127px;
+  margin: 0 0 0 -135px;
   padding: 5px 15px;
   border-top: 1px solid rgba(171, 207, 231, 0.2);
 }
