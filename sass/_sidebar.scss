@@ -99,6 +99,10 @@
 .icon-menu a {
     background: none;
 }
+#searchexpando {
+    margin: 0px 0 0 0;
+    border-radius: 0 0 2px 2px;
+}
 
 /* Subscribe/UnSubcribe Button */
 .titlebox .fancy-toggle-button {
@@ -189,84 +193,4 @@
     font-family: inherit;
     font-size: normal;
     border-radius: 0px;
-}
-/* Sidebar content styles */
-.md{
-    color:white;
-}
-
-.md h4 a,
-.md h5 a{
-    text-align: center;
-    display: block;
-    color: #fff;
-    font-weight: 400;
-    padding: 6px 10px;
-    font-size: 16px;
-    line-height:1.4;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-.md h4 a{
-    background-color: rgba(0,204,51,0.75);
-    border:1px solid rgba(0,204,51,0.5);
-}
-
-.md h5 a{
-    background-color: rgba(171,207,231,0.25);
-    border: 1px solid rgba(171,207,231,0.5);
-}
-
-.md h4 a:hover{
-    text-decoration: none;
-    background-color: rgba(0,153,38,0.75);
-    border-color: rgba(0,143,36,0.5);
-}
-.md h5 a:hover{
-    text-decoration: none;
-    background-color: rgba(131,184,220,0.25);
-    border-color: rgba(123,180,217,0.5);
-}
-
-.md a {
-    color: #829bae;
-    text-decoration: none;
-}
-.md a:hover{
-    text-decoration: underline;
-}
-
-.md blockquote,
-.md del {
-    color: #bbb;
-}
-
-.md blockquote{
-    border-left: 2px solid #bbb;
-}
-
-.md code,
-.md pre {
-    border: 1px solid #7b7b7b;
-    background-color: #5a5a5a;
-    border-radius: 2px;
-}
-
-.md pre,
-.md .-cells,
-.md th,
-.md td {
-    padding: 5px 10px;
-}
-.md td,
-.md th {
-    border: 1px solid rgb(91, 106, 120);
-    text-align: left;
-}
-
-.md hr {
-    background: rgba(171,207,231,1);
-    height:1px;
-    margin:10px 0;
 }
