@@ -378,7 +378,7 @@ textarea:focus {
  ************/
 .side {
   background-color: transparent;
-  margin: 15px 15px 0 15px;
+  margin: 15px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(86, 103, 118, 0.5);
@@ -415,7 +415,6 @@ textarea:focus {
   position: absolute;
   top: 225px;
 }
-
 .titlebox .redditname a {
   color: white;
 }
@@ -428,12 +427,9 @@ textarea:focus {
 /* Moderator tools */
 .titlebox form.toggle,
 .leavemoderator {
-  /*margin: 0;*/
   padding: 8px 0px;
-  /*font-size: smaller;*/
   color: white;
   background: transparent;
-  /*border-bottom: 1px solid #bbb;*/
 }
 
 .tagline a,
@@ -538,8 +534,6 @@ textarea:focus {
   line-height: 1em;
   height: auto;
   color: #fff;
-  /*    background-color: rgba(0,204,51,0.75);
-      border:1px solid rgba(0,204,51,0.5);*/
   background-color: rgba(171, 207, 231, 0.25);
   border: 1px solid rgba(171, 207, 231, 0.5);
   font-weight: 400;
