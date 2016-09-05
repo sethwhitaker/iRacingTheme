@@ -91,3 +91,30 @@ button[name="save"]:hover{
 .content .spacer {
     margin-bottom: 15px;
 }
+
+.arrow,
+.res-nightmode .arrow {
+    height: 18px;
+}
+.arrow.upmod,
+.res-nightmode .arrow.upmod {
+    background: url(%%Votes%%);
+    background-position: -16px 0px;
+}
+.arrow.up,
+.res-nightmode .arrow.up,
+.res-nightmode .arrow.up:hover {
+    background: url(%%Votes%%);
+    background-position: 0px 0px;
+}
+.arrow.down,
+.res-nightmode .arrow.down,
+.res-nightmode .arrow.down:hover {
+    background: url(%%Votes%%);
+    background-position: 0px -17px;
+}
+.arrow.downmod,
+.res-nightmode .arrow.downmod {
+    background: url(%%Votes%%);
+    background-position: -16px -17px;
+}
