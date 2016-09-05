@@ -36,15 +36,31 @@
     display:none;
 }
 
-/* Main Title */
-.titlebox .redditname {
-    margin-bottom:20px;
+.titlebox {
+    .word{
+        display: none;
+    }
+    .subscribers{
+        .number:after {
+            content: " iRacers Subscribed";
+        }
 
-    position: absolute;
-    top: 225px;
-}
-.titlebox .redditname a {
-    color: white;
+    }
+    .users-online{
+        .number:after {
+            content: " iRacers Online";
+        }
+    }
+
+    /* Main Title */
+    .redditname {
+        margin-bottom:20px;
+        position: absolute;
+        top: 225px;
+        a {
+            color: white;
+        }
+    }
 }
 
 .users-online {

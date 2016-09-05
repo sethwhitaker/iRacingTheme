@@ -409,7 +409,18 @@ textarea:focus {
   display: none;
 }
 
-/* Main Title */
+.titlebox {
+  /* Main Title */
+}
+.titlebox .word {
+  display: none;
+}
+.titlebox .subscribers .number:after {
+  content: " iRacers Subscribed";
+}
+.titlebox .users-online .number:after {
+  content: " iRacers Online";
+}
 .titlebox .redditname {
   margin-bottom: 20px;
   position: absolute;
