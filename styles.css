@@ -402,6 +402,52 @@ textarea:focus {
   color: white;
 }
 
+.footer-parent {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 25px 0;
+  border-top: 1px solid rgba(86, 103, 118, 0.5);
+}
+
+.footer {
+  color: white;
+  padding: 0px;
+  margin: 0px auto 20px;
+  max-width: 960px;
+  border: none;
+}
+.footer .col {
+  border-left: 1px solid rgba(171, 207, 231, 0.5);
+}
+.footer ul.flat-vert {
+  text-align: center;
+}
+.footer .flat-vert.title {
+  font-family: inherit;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bottommenu {
+  color: white;
+}
+.bottommenu a, .bottommenu .updated {
+  color: #829bae;
+}
+
+#hsts_pixel {
+  display: none;
+}
+
+.debuginfo {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ccc;
+}
+.debuginfo .content {
+  margin: 0;
+}
+
 /***********
  *
  * Sidebar
