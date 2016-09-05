@@ -947,7 +947,18 @@ body > .content .link .rank,
 }
 
 .comment {
-  padding-left: 10px;
+  padding: 10px 5px 0 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(86, 103, 118, 0.5);
+  margin: 0 0 8px 0;
+  border-radius: 2px;
+}
+.comment .child {
+  border-left: none;
+}
+.comment .child .comment {
+  margin-bottom: 5px;
+  background-color: transparent;
 }
 
 .comment .entry {
@@ -967,6 +978,13 @@ body > .content .link .rank,
   display: inline-block;
   background-color: rgba(45, 53, 137, 0.6);
   border: solid 1px #4c5182;
+}
+
+.morecomments {
+  margin-left: -15px;
+}
+.morecomments a {
+  color: #049e2d;
 }
 
 .rounded {

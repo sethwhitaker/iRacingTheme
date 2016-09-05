@@ -82,7 +82,18 @@
 }
 
 .comment {
-    padding-left:10px;
+    padding:10px 5px 0 10px;
+    background-color: $dark-bg;
+    border: 1px solid $content-border;
+    margin:0 0 8px 0;
+    border-radius: 2px;
+    .child {
+        border-left: none;
+        .comment{
+            margin-bottom: 5px;
+            background-color: transparent;
+        }
+    }
 }
 
 .comment .entry {
@@ -103,6 +114,13 @@
     display: inline-block;
     background-color: rgba(45, 53, 137, 0.6);
     border: solid 1px #4c5182;
+}
+
+.morecomments {
+    margin-left: -15px;
+    a {
+        color: $iracing-green;
+    }
 }
 .rounded {
     border-radius: 2px;
