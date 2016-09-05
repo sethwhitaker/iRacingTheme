@@ -220,6 +220,7 @@
         margin: 3px 8px;
     }
     .content {
+        margin:0; // LANG HACK WORKAROUND ADDITION
         border: none;
         padding: 10px 0 0;
     }
@@ -240,4 +241,9 @@
     border-top: 1px solid $blue-border;
     width: 300px;
     padding-top: 15px;
+}
+
+// LANG HACK WORKAROUND
+.gadget .reddit-entry {
+    margin-left: 20px;
 }

@@ -599,6 +599,7 @@ textarea:focus {
   margin: 3px 8px;
 }
 .sidecontentbox .content {
+  margin: 0;
   border: none;
   padding: 10px 0 0;
 }
@@ -617,6 +618,10 @@ textarea:focus {
   border-top: 1px solid rgba(171, 207, 231, 0.5);
   width: 300px;
   padding-top: 15px;
+}
+
+.gadget .reddit-entry {
+  margin-left: 20px;
 }
 
 /***************
