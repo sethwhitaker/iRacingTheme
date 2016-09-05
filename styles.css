@@ -673,7 +673,6 @@ textarea:focus {
 .content {
   margin: 15px 370px 0px 15px;
 }
-
 .content .link {
   background-color: rgba(0, 0, 0, 0.6);
   /*padding: 35px 20px 45px;*/
@@ -704,11 +703,15 @@ body > .content .link .rank,
   text-align: center;
   line-height: 86px;
 }
-
+.link .score.likes {
+  color: #ff373f;
+}
+.link .score.dislikes {
+  color: #64a9fc;
+}
 .link .midcol {
   margin: 17px 15px 0;
 }
-
 .link .thumbnail {
   position: relative;
   height: 70px;
@@ -725,47 +728,72 @@ body > .content .link .rank,
   background-repeat: no-repeat;
   background-position: center;
 }
+.link p.title {
+  margin: 25px 60px 0 0;
+}
+.link a.title {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+.link a.title:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+.link .title:hover {
+  color: #fff;
+}
+.link .title:visited {
+  color: #fff;
+}
+.link .title:active {
+  color: #fff;
+}
+.link .tagline {
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+.link .flat-list {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-top: 1px solid rgba(86, 103, 118, 0.5);
+  padding: 6px 0 6px 55px;
+}
+.link .usertext-body .md {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+}
+.link.promotedlink.promoted, .link.promotedlink.external {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.link.last-clicked {
+  border: 1px solid rgba(171, 207, 231, 0.5);
+  overflow: initial;
+}
+.link.last-clicked .flat-list {
+  border-color: rgba(171, 207, 231, 0.5);
+}
 
 .entry {
   overflow: initial;
   margin-left: 183px;
 }
-
-.link p.title {
-  margin: 25px 60px 0 0;
+.entry .buttons li {
+  padding-right: 10px;
 }
-
-.link a.title {
-  color: #fff;
-  transition: color 0.2s ease;
+.entry .buttons li a {
+  color: #718897;
+  font-weight: normal;
+  padding: 0;
+  transition: color 0.3s ease;
 }
-
-.link a.title:hover {
-  color: #bbb;
+.entry .buttons li a:hover {
+  color: #aecee4;
   text-decoration: none;
-}
-
-.link .title:hover {
-  color: #fff;
-}
-
-.link .title:visited {
-  color: #fff;
-}
-
-.link .title:active {
-  color: #fff;
-}
-
-.link .tagline {
-  box-sizing: border-box;
-  padding: 5px 0;
-}
-
-.link .usertext-body .md {
-  background-color: transparent;
-  border: none;
-  border-radius: 0px;
 }
 
 .expando-button {
@@ -783,47 +811,6 @@ body > .content .link .rank,
   margin: 0 0 0 -135px;
   padding: 5px 15px;
   border-top: 1px solid rgba(171, 207, 231, 0.2);
-}
-
-.link.promotedlink.promoted,
-.link.promotedlink.external {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.link.last-clicked {
-  border: 1px solid rgba(171, 207, 231, 0.5);
-  overflow: initial;
-}
-
-.link .flat-list {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  border-top: 1px solid rgba(86, 103, 118, 0.5);
-  padding: 6px 0 6px 55px;
-}
-
-.link.last-clicked .flat-list {
-  border-color: rgba(171, 207, 231, 0.5);
-}
-
-.entry .buttons li {
-  padding-right: 10px;
-}
-
-.entry .buttons li a {
-  color: #718897;
-  font-weight: normal;
-  padding: 0;
-  transition: color 0.3s ease;
-}
-
-.entry .buttons li a:hover {
-  color: #aecee4;
-  text-decoration: none;
 }
 
 /* Post Content */
