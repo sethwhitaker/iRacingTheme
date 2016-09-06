@@ -1090,3 +1090,28 @@ body > .content .link .rank,
 .error {
   color: #f1202b;
 }
+
+.res .RES-keyNav-activeElement,
+.res .RES-keyNav-activeElement .md-container,
+.res .res-commentBoxes .comment .comment,
+.res .res-commentBoxes .comment .comment .comment .comment,
+.res .res-commentBoxes .comment .comment .comment .comment .comment .comment,
+.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-nightmode .RES-keyNav-activeElement,
+.res-nightmode .RES-keyNav-activeElement .md-container,
+.res-nightmode .res-commentBoxes .comment .comment,
+.res-nightmode .res-commentBoxes .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: transparent !important;
+}
+.res .res-commentBoxes.res-commentBoxes-rounded .comment, .res-nightmode .res-commentBoxes.res-commentBoxes-rounded .comment {
+  border-radius: 2px !important;
+}
+.res .res-commentBoxes .comment, .res-nightmode .res-commentBoxes .comment {
+  overflow: inherit;
+  margin: 0 0 8px 0 !important;
+  border-color: rgba(86, 103, 118, 0.5) !important;
+  padding: 10px 5px 0 10px !important;
+}

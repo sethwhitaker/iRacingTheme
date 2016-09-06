@@ -1,0 +1,51 @@
+// .res-nightmode
+// .res-accountSwitcher-dropDownStyle-alien
+// .res-betteReddit-showLastEditedTimestamp
+// .res-neverEndingReddit-hideDupes-hide
+// .res-orangered-hideUnreadCount
+// .res-searchHelper-searchPageTabs
+// .res-showImages
+// .res-showImages-highlightNSFWButton
+// .res-showImages-displayImageCaptions
+// .res-showImages-captionsPosition-titleAbove
+// .res-singleClick-hideLEC
+// .res-navTop
+// .res-styleTweaks-showExpandos
+// .res-styleTweaks-showFullLinkFlair-never
+// .res-styleTweaks-scrollSubredditDropdown
+// .res-styleTweaks-postTitleCapitalization-none
+// .res-tableTools-sort
+// .res-userHighlight
+// .res-voteEnhancements-estimatePostVotes
+// .res-voteEnhancements-highlightScores
+// .res-voteEnhancements-colorLinkScore-none
+// .res-r-iracingtheme
+// .res
+// .res-v5
+// .res-v5-0
+// .res-v5-0-1
+// .res-srstyle-enabled
+
+.res, .res-nightmode{
+
+	.RES-keyNav-activeElement,
+	.RES-keyNav-activeElement .md-container,
+	.res-commentBoxes .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	   background-color: transparent !important;
+	}
+
+	.res-commentBoxes.res-commentBoxes-rounded .comment {
+    	border-radius: 2px !important;
+	}
+
+	.res-commentBoxes .comment {
+	    overflow: inherit;
+	    margin: 0 0 8px 0 !important;
+	    border-color: $content-border !important;
+	    padding: 10px 5px 0 10px !important;
+	}
+}
