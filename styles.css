@@ -823,6 +823,13 @@ body > .content .link .rank,
 .link.last-clicked .flat-list {
   border-color: rgba(171, 207, 231, 0.5);
 }
+.link.stickied .midcol.likes {
+  margin-left: 61px;
+}
+.link.stickied a.title {
+  font-weight: normal;
+  color: #2e9c49;
+}
 
 .entry {
   overflow: initial;
@@ -1063,6 +1070,10 @@ body > .content .link .rank,
 
 .rounded {
   border-radius: 2px;
+}
+
+.thing.spam {
+  background-color: rgba(235, 37, 44, 0.3);
 }
 
 /* Error */

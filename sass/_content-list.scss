@@ -132,6 +132,15 @@ body >.content .link .rank,
             border-color: rgba(171,207,231,0.5);
         }
     }
+    &.stickied {
+        .midcol.likes{
+            margin-left:61px;
+        }
+        a.title {
+            font-weight: normal;
+            color: #2e9c49;
+        }
+    }
 }
 
 .entry {
