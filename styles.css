@@ -778,25 +778,26 @@ body > .content .link .rank,
   margin: 25px 60px 0 0;
 }
 .link a.title {
-  color: #fff;
+  color: #e6e6e6;
   transition: color 0.2s ease;
 }
+.link a.title:visited {
+  color: #ccc;
+}
 .link a.title:hover {
-  color: #bbb;
+  color: #01b42d;
   text-decoration: none;
 }
-.link .title:hover {
-  color: #fff;
-}
-.link .title:visited {
-  color: #fff;
-}
-.link .title:active {
-  color: #fff;
+.link a.title:active {
+  color: #aaa;
 }
 .link .tagline {
   box-sizing: border-box;
   padding: 5px 0;
+}
+.link .tagline .stickied-tagline,
+.link .tagline .search-result-meta .stickied-tagline {
+  color: #01b42d;
 }
 .link .flat-list {
   box-sizing: border-box;
@@ -823,15 +824,15 @@ body > .content .link .rank,
 .link.last-clicked .flat-list {
   border-color: rgba(171, 207, 231, 0.5);
 }
-.link.stickied .midcol.likes {
+.link.thing.stickied .midcol.likes {
   margin-left: 61px;
 }
-.single-page .link.stickied .midcol.likes {
+.single-page .link.thing.stickied .midcol.likes {
   margin-left: 15px;
 }
-.link.stickied a.title {
+.link.thing.stickied a.title {
   font-weight: normal;
-  color: #2e9c49;
+  color: #01b42d;
 }
 
 .entry {
