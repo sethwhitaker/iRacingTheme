@@ -1047,6 +1047,7 @@ body > .content .link .rank,
 
 .comment .entry {
   margin-left: 0;
+  overflow: hidden;
 }
 
 .comment.new-comment {
@@ -1065,7 +1066,7 @@ body > .content .link .rank,
 }
 
 .morecomments {
-  margin-left: -15px;
+  margin-left: 5px;
 }
 .morecomments a {
   color: #049e2d;
