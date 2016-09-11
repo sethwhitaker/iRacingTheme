@@ -1,0 +1,259 @@
+
+/***********
+ *
+ * Sidebar
+ *
+ ************/
+.side {
+    background-color: transparent;
+    margin: 15px;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(86, 103, 118, 0.5);
+    padding: 315px 20px 20px;
+    border-radius:4px;
+    color:white;
+    position: relative;
+    width:342px;
+}
+.side:before {
+    background-image:url(%%sidebar%%);
+    background-color: transparent;
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 340px;
+    height: 213px;
+    z-index: 1;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.sponsorshipbox{
+    display:none;
+}
+
+.titlebox {
+    .word{
+        display: none;
+    }
+    .subscribers{
+        .number:after {
+            content: " iRacers Subscribed";
+        }
+
+    }
+    .users-online{
+        .number:after {
+            content: " iRacers Online";
+        }
+    }
+
+    /* Main Title */
+    .redditname {
+        margin-bottom:20px;
+        position: absolute;
+        top: 225px;
+        a {
+            color: white;
+        }
+    }
+}
+
+.users-online {
+    position: absolute;
+    top:275px;
+}
+
+/* Moderator tools */
+.titlebox form.toggle,
+.leavemoderator {
+    padding: 8px 0px;
+    color: white;
+    background: transparent;
+}
+.tagline a,
+.search-result-meta a {
+    color: #829bae;
+}
+
+.tagline .author.submitter,
+.search-result-meta .author.submitter,
+.tagline .author.moderator,
+.search-result-meta .author.moderator {
+    color:white;
+    padding:2px;
+    border-radius: 2px;
+}
+
+.tagline .author.submitter,
+.search-result-meta .author.submitter{
+    background-color: rgba(123,180,217,0.5);
+}
+
+.tagline .submitter,
+.search-result-meta .submitter {
+    color: rgba(123,180,217,0.5);
+}
+
+.tagline .author.moderator,
+.search-result-meta .author.moderator {
+    background-color: rgba(0,204,51,0.75);
+}
+
+.tagline .moderator,
+.search-result-meta .moderator {
+    color: rgba(0,204,51,0.75);
+}
+
+.icon-menu a {
+    background: none;
+}
+#searchexpando {
+    margin: 0px 0 0 0;
+    border-radius: 0 0 2px 2px;
+}
+
+/* Subscribe/UnSubcribe Button */
+.titlebox .fancy-toggle-button {
+    display: inline-block;
+    margin-right: 20px;
+    position: absolute;
+    top: 235px;
+    right: 0;
+}
+.titlebox .subscribers{
+    position: absolute;
+    top: 255px;
+}
+
+.titlebox h1 {
+    font-family: inherit;
+}
+
+.fancy-toggle-button .add {
+    background-image: none;
+    background-color: rgba(0,204,51,0.75);
+    border:1px solid rgba(0,204,51,0.5);
+}
+.fancy-toggle-button .add:hover {
+    background-color: rgba(0,153,38,0.75);
+    border-color: rgba(0,143,36,0.5);
+}
+
+.fancy-toggle-button .remove {
+    background-image: none;
+    background-color: rgba(171,207,231,0.25);
+    border: 1px solid rgba(171,207,231,0.5);
+}
+.fancy-toggle-button .remove:hover {
+    background-color: rgba(131,184,220,0.25);
+    border-color: rgba(123,180,217,0.5);
+}
+
+.fancy-toggle-button .active {
+    padding: 6px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    border-radius: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* Add link/post buttons */
+.morelink {
+    background-image: none;
+    font-size: 100%;
+    letter-spacing: 1px;
+    line-height: 1em;
+    height: auto;
+    color: #fff;
+    background-color: rgba(171,207,231,0.25);
+    border: 1px solid rgba(171,207,231,0.5);
+    font-weight: 400;
+    padding: 6px 0px;
+    font-size: 16px;
+    line-height:1.4;
+    border-radius: 2px;
+    text-transform: capitalize;
+}
+.morelink:hover,
+.mlh {
+    background-color: rgba(0,153,38,0.75);
+    border-color: rgba(0,143,36,0.5);
+    background-image: none;
+}
+
+.morelink a {
+    color: #fff;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.morelink .nub {
+    display: none;
+}
+
+.linkinfo {
+    padding: 0px;
+    border: none;
+    background:none;
+    font-family: inherit;
+    font-size: normal;
+    border-radius: 0px;
+}
+
+.sidecontentbox {
+    background-color: rgba(45,52,140,0.3);
+    padding: 8px 10px;
+    border: 1px solid rgb(113, 136, 151);
+    border-radius: 2px;
+    .title h1 {
+        display: inline;
+        text-transform: lowercase;
+        margin: 0;
+        color: white;
+        font-size: 180%;
+    }
+    .collapse-button {
+        line-height: 8px;
+        background: #eee;
+        color: #333;
+        border: 1px solid #999;
+        border-radius: 2px;
+        margin: 3px 8px;
+    }
+    .content {
+        margin:0; // LANG HACK WORKAROUND ADDITION
+        border: none;
+        padding: 10px 0 0;
+    }
+}
+
+.sidebox.create .spacer {
+    background: transparent;
+}
+
+
+.single-page .side{
+    padding-top: 405px;
+}
+
+.linkinfo {
+    position: absolute;
+    top: 310px;
+    border-top: 1px solid $blue-border;
+    width: 300px;
+    padding-top: 15px;
+}
+
+// LANG HACK WORKAROUND
+.gadget .reddit-entry {
+    margin-left: 20px;
+}

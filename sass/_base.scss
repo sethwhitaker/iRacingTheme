@@ -1,0 +1,120 @@
+/**************
+ *
+ * Base
+ *
+ **************/
+ *{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+ }
+ body{
+    background-image:url(%%IE-Blurred-BG%%);
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 1030px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #829bae;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+.usertext button {
+    /*margin: 5px 5px 10px 0;*/
+}
+.btn,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height:1.4;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: rgba(171,207,231,0.25);
+    border: 1px solid rgba(171,207,231,0.5);
+}
+.btn:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: rgba(131,184,220,0.25);
+    border-color: rgba(123,180,217,0.5);
+}
+button[name="save"]{
+    background-color: rgba(0,204,51,0.75);
+    border:1px solid rgba(0,204,51,0.5);
+}
+button[name="save"]:hover{
+    background-color: rgba(0,153,38,0.75);
+    border-color: rgba(0,143,36,0.5);
+}
+
+.btn a{
+    color:white;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.infobar,
+.reddit-infobar,
+.content.submit .info-notice {
+    background-color: $info-bg;
+    border-color: #55599c;
+    color: white;
+}
+.content.submit .info-notice {
+    max-width: 540px;
+}
+
+.reddit-infobar{
+    .md{
+        color:white;
+    }
+}
+
+.content .spacer {
+    margin-bottom: 15px;
+}
+
+.arrow,
+.res-nightmode .arrow {
+    height: 18px;
+}
+.arrow.upmod,
+.res-nightmode .arrow.upmod {
+    background: url(%%Votes%%);
+    background-position: -16px 0px;
+}
+.arrow.up,
+.res-nightmode .arrow.up,
+.res-nightmode .arrow.up:hover {
+    background: url(%%Votes%%);
+    background-position: 0px 0px;
+}
+.arrow.down,
+.res-nightmode .arrow.down,
+.res-nightmode .arrow.down:hover {
+    background: url(%%Votes%%);
+    background-position: 0px -17px;
+}
+.arrow.downmod,
+.res-nightmode .arrow.downmod {
+    background: url(%%Votes%%);
+    background-position: -16px -17px;
+}

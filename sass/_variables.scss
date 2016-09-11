@@ -1,0 +1,46 @@
+//iRacing Colors
+$iracing-red: #f1202b;
+$iracing-blue: #2f368d;
+$iracing-green: #049e2d;
+
+$link-color: #829bae;
+
+$info-bg:rgba(45,53,137,0.6);
+
+$content-border: rgba(86,103,118,0.5);
+
+// Dark background:
+$dark-bg: rgba(0,0,0,0.6);
+
+//Light Background
+$light-bg: rgba(255,255,255,0.8);
+
+$red-bg: rgba(235, 37, 44, 0.3);
+
+// Green Button
+$green-bg: rgba(0,204,51,0.75);
+$green-border: rgba(0,204,51,0.5);
+//hover
+$green-bg-hover: rgba(0,153,38,0.75);
+$green-border-hover: rgba(0,143,36,0.5);
+
+// Blue Button
+$blue-bg: rgba(171,207,231,0.25);
+$blue-border: rgba(171,207,231,0.5);
+//Blue Hover
+$blue-bg-hover: rgba(131,184,220,0.25);
+$blue-border-hover: rgba(123,180,217,0.5);
+
+//Button Styles
+@mixin button{
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	font-weight: 400;
+	padding: 6px 10px;
+	font-size: 16px;
+	line-height:1.4;
+	border-radius: 2px;
+	text-decoration: none;
+}
+
