@@ -98,6 +98,7 @@
 
 .comment .entry {
     margin-left:0;
+    overflow:hidden;
 }
 
 .comment.new-comment{
@@ -117,7 +118,7 @@
 }
 
 .morecomments {
-    margin-left: -15px;
+    margin-left: 5px;
     a {
         color: $iracing-green;
     }
