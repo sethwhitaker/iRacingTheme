@@ -26,14 +26,19 @@
 // .res-v5-0-1
 // .res-srstyle-enabled
 
-.res, .res-nightmode{
+.res,
+.res-nightmode{
 
 	.RES-keyNav-activeElement,
 	.RES-keyNav-activeElement .md-container,
 	.res-commentBoxes .comment .comment,
+	.res-commentBoxes .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 	   background-color: transparent !important;
 	}

@@ -135,6 +135,9 @@ body >.content .link .rank,
     &.stickied {
         .midcol.likes{
             margin-left:61px;
+            .single-page &{
+                margin-left:15px;
+            }
         }
         a.title {
             font-weight: normal;
