@@ -1056,6 +1056,10 @@ body > .content .link .rank,
   padding-left: 10px;
 }
 
+.comment.spam > .child, .message.spam > .child {
+  background-color: transparent;
+}
+
 .commentarea .comment-visits-box {
   color: white;
   margin: 15px 0;
