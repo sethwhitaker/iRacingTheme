@@ -69,6 +69,7 @@ body >.content .link .rank,
             background-image: url(%%iracing-snoo-post%%);
             background-repeat: no-repeat;
             background-position: center;
+            background-size: 70px 70px;
         }
     }
 
@@ -158,13 +159,25 @@ body >.content .link .rank,
 }
 
 .expando-button {
-    position: absolute;
-/*    height: 23px;
-    width: 23px;*/
-    margin: 0;
-    background: none;
-    top: 55px;
-    right: 10px;
+    // position: absolute;
+    // height: 23px;
+    // width: 23px;
+    // margin: 0;
+    // background: none;
+    // top: 55px;
+    // right: 10px;
+    &.collapsed.selftext,
+    &.collapsed.selftext:hover,
+    &.collapsed.video,
+    &.collapsed.video:hover,
+    &.expanded.selftext,
+    &.expanded.selftext:hover,
+    &.expanded.video,
+    &.expanded.video:hover{
+        background-image: url(%%sprite-expando%%);
+        // background-position: 0px -145px;
+        // background-repeat: no-repeat;
+    }
 }
 .expando {
     /*clear: left;*/
@@ -173,6 +186,5 @@ body >.content .link .rank,
     padding: 5px 15px;
     border-top: 1px solid rgba(171,207,231,0.2);
 }
-
 
 
