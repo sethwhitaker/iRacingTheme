@@ -773,6 +773,7 @@ body > .content .link .rank,
   background-image: url(%%iracing-snoo-post%%);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px 70px;
 }
 .link p.title {
   margin: 25px 60px 0 0;
@@ -853,14 +854,8 @@ body > .content .link .rank,
   text-decoration: none;
 }
 
-.expando-button {
-  position: absolute;
-  /*    height: 23px;
-      width: 23px;*/
-  margin: 0;
-  background: none;
-  top: 55px;
-  right: 10px;
+.expando-button.collapsed.selftext, .expando-button.collapsed.selftext:hover, .expando-button.collapsed.video, .expando-button.collapsed.video:hover, .expando-button.expanded.selftext, .expando-button.expanded.selftext:hover, .expando-button.expanded.video, .expando-button.expanded.video:hover {
+  background-image: url(%%sprite-expando%%);
 }
 
 .expando {
