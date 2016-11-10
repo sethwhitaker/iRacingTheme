@@ -809,6 +809,7 @@ body > .content .link .rank,
   width: 100%;
   border-top: 1px solid rgba(86, 103, 118, 0.5);
   padding: 6px 0 6px 55px;
+  height: 30px;
 }
 .link .usertext-body .md {
   background-color: transparent;
@@ -843,6 +844,16 @@ body > .content .link .rank,
 .entry .buttons li {
   padding-right: 10px;
 }
+.entry .buttons li.reported-stamp {
+  border: 1px solid #ffdd33 !important;
+  padding: 0 4px;
+  color: #ffdd33;
+  background-color: transparent;
+}
+.entry .buttons li.reported-stamp:hover {
+  background-color: #ffdd33;
+  color: black;
+}
 .entry .buttons li a {
   color: #718897;
   font-weight: normal;
@@ -852,6 +863,62 @@ body > .content .link .rank,
 .entry .buttons li a:hover {
   color: #aecee4;
   text-decoration: none;
+}
+
+ul.report-reasons {
+  width: 100%;
+  background-color: #ffdd33;
+  border: none;
+  padding: 5px;
+  color: black;
+}
+.link ul.report-reasons {
+  box-shadow: 0px 10px 40px 0px black;
+  z-index: 1;
+  left: 0;
+  position: absolute;
+  top: 100%;
+}
+
+.pretty-button {
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.pretty-button.negative, .pretty-button.neutral, .pretty-button.neutral.pressed, .pretty-button.positive {
+  background-image: none;
+  background-color: transparent;
+}
+.pretty-button.negative {
+  border: 1px solid #f1202b;
+  color: #f1202b;
+}
+.pretty-button.negative:hover {
+  color: white;
+  background-color: #f1202b;
+}
+.pretty-button.neutral[data-event-action~="remove"] {
+  border: 1px solid #ff9800;
+  color: #ff9800;
+}
+.pretty-button.neutral[data-event-action~="remove"]:hover {
+  color: white;
+  background-color: #ff9800;
+}
+.pretty-button.neutral[data-event-action~="ignorereports"], .pretty-button.neutral[data-event-action~="unignorereports"] {
+  border: 1px solid #6d74ce;
+  color: #6d74ce;
+}
+.pretty-button.neutral[data-event-action~="ignorereports"]:hover, .pretty-button.neutral[data-event-action~="unignorereports"]:hover {
+  color: white;
+  background-color: #6d74ce;
+}
+.pretty-button.positive {
+  border: 1px solid #049e2d;
+  color: #049e2d;
+}
+.pretty-button.positive:hover {
+  color: white;
+  background-color: #049e2d;
 }
 
 .expando-button.collapsed.selftext, .expando-button.collapsed.selftext:hover, .expando-button.collapsed.video, .expando-button.collapsed.video:hover, .expando-button.expanded.selftext, .expando-button.expanded.selftext:hover, .expando-button.expanded.video, .expando-button.expanded.video:hover {

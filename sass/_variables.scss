@@ -32,6 +32,9 @@ $blue-border: rgba(171,207,231,0.5);
 $blue-bg-hover: rgba(131,184,220,0.25);
 $blue-border-hover: rgba(123,180,217,0.5);
 
+$gold: #ffdd33;
+$orange: #ff9800;
+
 //Button Styles
 @mixin button{
 	text-align: center;
@@ -44,4 +47,3 @@ $blue-border-hover: rgba(123,180,217,0.5);
 	border-radius: 2px;
 	text-decoration: none;
 }
-

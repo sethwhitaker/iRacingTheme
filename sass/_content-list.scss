@@ -107,6 +107,7 @@ body >.content .link .rank,
         width: 100%;
         border-top: 1px solid rgba(86,103,118,0.5);
         padding: 6px 0 6px 55px;
+        height:30px;
     }
     .usertext-body .md {
         background-color: transparent;
@@ -145,6 +146,16 @@ body >.content .link .rank,
     margin-left: 183px;
     .buttons li {
         padding-right: 10px;
+        &.reported-stamp {
+            border: 1px solid $gold !important;
+            padding: 0 4px;
+            color: $gold;
+            background-color: transparent;
+            &:hover{
+                background-color: $gold;
+                color:black;
+            }
+        }
         a {
             color: #718897;
             font-weight: normal;
@@ -154,6 +165,75 @@ body >.content .link .rank,
                 color: #aecee4;
                 text-decoration: none;
             }
+        }
+    }
+}
+ul.report-reasons {
+    width: 100%;
+    background-color: $gold;
+    border:none;
+    padding: 5px;
+    color: black;
+    .link &{
+        box-shadow: 0px 10px 40px 0px rgba(0,0,0,1);
+        z-index: 1;
+        left: 0;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+
+.pretty-button {
+    // display: inline-block;
+    // margin-left: 5px;
+    // margin-bottom: 5px;
+    // border: 1px solid #666;
+    padding: 2px 6px;
+    // background: #ffffff none repeat-x scroll center left;
+    // color: #111;
+    // font-size: 10px;
+    // font-weight: normal;
+    border-radius: 2px;
+    // outline-style: none;
+
+    &.negative,
+    &.neutral,
+    &.neutral.pressed,
+    &.positive {
+        background-image: none;
+        background-color: transparent;
+    }
+    &.negative {
+        border: 1px solid $iracing-red;
+        color: $iracing-red;
+        &:hover{
+            color:white;
+            background-color: $iracing-red;
+        }
+    }
+    &.neutral[data-event-action~="remove"] {
+        border: 1px solid $orange;
+        color: $orange;
+        &:hover{
+            color:white;
+            background-color: $orange;
+        }
+    }
+    &.neutral[data-event-action~="ignorereports"],
+    &.neutral[data-event-action~="unignorereports"] {
+        border: 1px solid lighten($iracing-blue, 25%);
+        color: lighten($iracing-blue, 25%);
+        &:hover{
+            color:white;
+            background-color: lighten($iracing-blue, 25%);
+        }}
+    &.positive {
+        border: 1px solid $iracing-green;
+        color: $iracing-green;
+        &:hover{
+            color:white;
+            background-color: $iracing-green;
         }
     }
 }
@@ -186,5 +266,6 @@ body >.content .link .rank,
     padding: 5px 15px;
     border-top: 1px solid rgba(171,207,231,0.2);
 }
+
 
 
