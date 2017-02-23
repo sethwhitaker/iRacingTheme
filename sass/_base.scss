@@ -71,6 +71,20 @@ button[name="save"]:hover{
     }
 }
 
+.c-btn-primary {
+    background-color: rgba(0,204,51,0.75);
+    border: 1px solid rgba(0,204,51,0.5);
+    &:hover, &:focus, &:active, &.disabled, &[disabled] {
+        background-color: rgba(0,153,38,0.75);
+    }
+}
+.c-btn {
+    // @extend .btn;
+    // border: 1px solid rgba(171,207,231,0.5);
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
 .nextprev, .next-suggestions {
     color: #718897;
     margin: 10px;

@@ -76,6 +76,19 @@ button[name="save"]:hover {
   text-decoration: none;
 }
 
+.c-btn-primary {
+  background-color: rgba(0, 204, 51, 0.75);
+  border: 1px solid rgba(0, 204, 51, 0.5);
+}
+.c-btn-primary:hover, .c-btn-primary:focus, .c-btn-primary:active, .c-btn-primary.disabled, .c-btn-primary[disabled] {
+  background-color: rgba(0, 153, 38, 0.75);
+}
+
+.c-btn {
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
 .nextprev, .next-suggestions {
   color: #718897;
   margin: 10px;
@@ -952,7 +965,7 @@ textarea:focus {
 }
 
 .content {
-  margin: 15px 370px 0px 15px;
+  margin: 15px 372px 0px 15px;
 }
 .content .link {
   background-color: rgba(0, 0, 0, 0.6);
@@ -1393,6 +1406,81 @@ ul.report-reasons {
 
 .thing.spam {
   background-color: rgba(235, 37, 44, 0.3);
+}
+
+/**************
+ *
+ * Search Results
+ *
+ **************/
+.combined-search-page #search input[type=text] {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+  width: 100%;
+  color: white !important;
+}
+
+.combined-search-page .searchpane {
+  background: none;
+  border: none;
+  padding: 20px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.search-result-group {
+  max-width: none;
+  min-width: 0px;
+  padding: 0px;
+}
+
+.search-result-group-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid rgba(86, 103, 118, 0.5);
+  border-radius: 2px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.search-result {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(86, 103, 118, 0.5);
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 15px;
+}
+.search-result :link,
+.search-result :link > mark {
+  color: #e6e6e6;
+}
+.search-result :link:hover,
+.search-result :link > mark:hover {
+  color: #049e2d;
+  text-decoration: none;
+}
+.search-result :visited,
+.search-result :visited > mark {
+  color: #ccc;
+}
+.search-result :visited:hover,
+.search-result :visited > mark:hover {
+  color: #049e2d;
+  text-decoration: none;
+}
+
+.search-expando.collapsed:before {
+  background: transparent;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.search-expando-button {
+  color: #829bae;
 }
 
 /* Error */
