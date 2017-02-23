@@ -837,6 +837,19 @@ body > .content .link .rank,
   color: #01b42d;
 }
 
+.flair.flair-staff,
+.link .flair.flair-staff {
+  background-color: #eb252c;
+  color: white;
+  border: 1px solid #ec464b;
+}
+.flair.flair-moderator,
+.link .flair.flair-moderator {
+  background-color: #2e358c;
+  color: white;
+  border: 1px solid #3f48b6;
+}
+
 .entry {
   overflow: initial;
   margin-left: 183px;

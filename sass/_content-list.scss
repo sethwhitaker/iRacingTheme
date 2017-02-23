@@ -141,6 +141,20 @@ body >.content .link .rank,
     }
 }
 
+.flair,
+.link .flair{
+    &.flair-staff{
+        background-color:#eb252c;
+        color:white;
+        border:1px solid #ec464b;
+    }
+    &.flair-moderator{
+        background-color:#2e358c;
+        color:white;
+        border:1px solid #3f48b6;
+    }
+}
+
 .entry {
     overflow: initial;
     margin-left: 183px;
