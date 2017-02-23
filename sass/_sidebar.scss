@@ -16,21 +16,86 @@
     position: relative;
     width:342px;
 }
-.side:before {
-    background-image:url(%%sidebar%%);
+
+/* === start: rotating banner === */
+
+.side > .spacer:after {
     background-color: transparent;
     background-size: cover;
     content: "";
     display: block;
     position: absolute;
     top: 0px;
-    left:0px;
+    right: 0px;
     width: 340px;
     height: 213px;
     z-index: 1;
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    opacity: 0;
+    -webkit-animation: banner1 35s linear infinite;
+    animation: banner1 35s linear infinite;
 }
+
+.side > .spacer:nth-child(5):after {
+  opacity: 1;
+  z-index: 1;
+  background-image: url(%%banner1%%);
+}
+.side > .spacer:nth-child(4):after {
+  background-image: url(%%banner2%%);
+  -webkit-animation-name: banner2;
+  animation-name: banner2;
+}
+.side > .spacer:nth-child(3):after {
+  background-image: url(%%banner3%%);
+  -webkit-animation-name: banner3;
+  animation-name: banner3;
+}
+.side > .spacer:nth-child(2):after {
+  background-image: url(%%banner4%%);
+  -webkit-animation-name: banner4;
+  animation-name: banner4;
+}
+.side > .spacer:nth-child(1):after {
+  background-image: url(%%banner5%%);
+  -webkit-animation-name: banner5;
+  animation-name: banner5;
+}
+
+@keyframes banner1 {
+  16%{opacity:1} 20%{opacity:0;z-index:1} 21%{z-index:0} 95%{z-index:0} 96%{opacity:0;z-index:1}
+}
+@keyframes banner2 {
+  16%{opacity:0;z-index:1} 20%{opacity:1} 36%{opacity:1} 40%{opacity:0;z-index:1} 41%{z-index:0}
+}
+@keyframes banner3 {
+  36%{opacity:0;z-index:1} 40%{opacity:1} 56%{opacity:1} 60%{opacity:0;z-index:1} 61%{z-index:0}
+}
+@keyframes banner4 {
+  56%{opacity:0;z-index:1} 60%{opacity:1} 76%{opacity:1} 80%{opacity:0;z-index:1} 81%{z-index:0}
+}
+@keyframes banner5 {
+  1%{z-index:0} 76%{opacity:0;z-index:1} 80%{opacity:1} 96%{opacity:1} 100%{opacity:0;z-index:1}
+}
+
+@-webkit-keyframes banner1 {
+  16%{opacity:1} 20%{opacity:0;z-index:1} 21%{z-index:0} 95%{z-index:0} 96%{opacity:0;z-index:1}
+}
+@-webkit-keyframes banner2 {
+  16%{opacity:0;z-index:1} 20%{opacity:1} 36%{opacity:1} 40%{opacity:0;z-index:1} 41%{z-index:0}
+}
+@-webkit-keyframes banner3 {
+  36%{opacity:0;z-index:1} 40%{opacity:1} 56%{opacity:1} 60%{opacity:0;z-index:1} 61%{z-index:0}
+}
+@-webkit-keyframes banner4 {
+  56%{opacity:0;z-index:1} 60%{opacity:1} 76%{opacity:1} 80%{opacity:0;z-index:1} 81%{z-index:0}
+}
+@-webkit-keyframes banner5 {
+  1%{z-index:0} 76%{opacity:0;z-index:1} 80%{opacity:1} 96%{opacity:1} 100%{opacity:0;z-index:1}
+}
+
+/* ==== end: rotating banner ==== */
 
 .sponsorshipbox{
     display:none;
