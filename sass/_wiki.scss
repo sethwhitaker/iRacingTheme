@@ -9,27 +9,79 @@
    margin: 0;
    margin-right: 0;
    background-color: $dark-bg;
-   padding: 1px 20px 30px;
+   padding: 20px 20px 30px;
    margin-top: 20px;
    border:1px solid $content-border;
 }
 
 // TOC
 .wiki-page .wiki-page-content .wiki>.toc>ul {
-   float: right;
-   padding: 11px 22px;
-   margin: 0 0 11px 22px;
    border: 1px solid $content-border;
-   // list-style: none;
-   max-width: 300px;
 }
 
 // Content
-.wiki-page-content .md h1,
-.wiki-page-content .md h2,
-.wiki-page-content .md h3,
-.wiki-page-content .md h4,
-.wiki-page-content .md h5,
-.wiki-page-content .md h6 {
-   color: white;
+
+.wiki-page {
+	.wiki-page-content .wiki>.toc>ul ul {
+   	margin: 0px;
+   	padding-left: 15px;
+   	border-left: 1px dotted $content-border;
+	}
+	.wikititle {
+	   margin-left: 15px;
+   	color: white;
+   	text-transform: capitalize;
+   	float: left;
+   	margin-top: 5px;
+   	margin-right: 45px;
+	}
+
+	.pageactions {
+	   display: flex;
+	   border-radius: 0px;
+	   overflow: hidden;
+	   border: none;
+
+		.wikiaction {
+	   	flex: 1 1;
+	   	background-color: $blue-bg;
+	   	color: white;
+	   	text-align: center;
+	   	text-transform: uppercase;
+	   	font-size: smaller;
+		   margin: 0px 2px;
+	   	padding-top: 8px;
+	   	padding-bottom: 8px;
+	   	padding-right: 14px;
+	   	padding-left: 14px;
+	   	border-radius: 2px;
+	   	border: 1px solid $blue-border;
+
+
+		   &:hover{
+		   	background-color: $blue-bg-hover;
+	   		border: 1px solid $blue-border-hover;
+		   	text-decoration: none;
+		   }
+		}
+		.wikiaction-current {
+		   color: white;
+		   background-color: $green-bg;
+	   	border: 1px solid $green-border;
+		   &:hover{
+		    	background-color: $green-bg-hover;
+	   		border: 1px solid $green-border-hover;
+		   }
+		}
+	}
+}
+
+.wiki-page-content {
+	.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+	   color: white;
+	}
+
+	.md h1:first-of-type{
+		margin-top: 0.78125em;
+	}
 }

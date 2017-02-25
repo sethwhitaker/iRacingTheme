@@ -1543,26 +1543,69 @@ ul.report-reasons {
   margin: 0;
   margin-right: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1px 20px 30px;
+  padding: 20px 20px 30px;
   margin-top: 20px;
   border: 1px solid rgba(86, 103, 118, 0.5);
 }
 
 .wiki-page .wiki-page-content .wiki > .toc > ul {
-  float: right;
-  padding: 11px 22px;
-  margin: 0 0 11px 22px;
   border: 1px solid rgba(86, 103, 118, 0.5);
-  max-width: 300px;
 }
 
-.wiki-page-content .md h1,
-.wiki-page-content .md h2,
-.wiki-page-content .md h3,
-.wiki-page-content .md h4,
-.wiki-page-content .md h5,
-.wiki-page-content .md h6 {
+.wiki-page .wiki-page-content .wiki > .toc > ul ul {
+  margin: 0px;
+  padding-left: 15px;
+  border-left: 1px dotted rgba(86, 103, 118, 0.5);
+}
+.wiki-page .wikititle {
+  margin-left: 15px;
   color: white;
+  text-transform: capitalize;
+  float: left;
+  margin-top: 5px;
+  margin-right: 45px;
+}
+.wiki-page .pageactions {
+  display: flex;
+  border-radius: 0px;
+  overflow: hidden;
+  border: none;
+}
+.wiki-page .pageactions .wikiaction {
+  flex: 1 1;
+  background-color: rgba(171, 207, 231, 0.25);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: smaller;
+  margin: 0px 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(171, 207, 231, 0.5);
+}
+.wiki-page .pageactions .wikiaction:hover {
+  background-color: rgba(131, 184, 220, 0.25);
+  border: 1px solid rgba(123, 180, 217, 0.5);
+  text-decoration: none;
+}
+.wiki-page .pageactions .wikiaction-current {
+  color: white;
+  background-color: rgba(0, 204, 51, 0.75);
+  border: 1px solid rgba(0, 204, 51, 0.5);
+}
+.wiki-page .pageactions .wikiaction-current:hover {
+  background-color: rgba(0, 153, 38, 0.75);
+  border: 1px solid rgba(0, 143, 36, 0.5);
+}
+
+.wiki-page-content .md h1, .wiki-page-content .md h2, .wiki-page-content .md h3, .wiki-page-content .md h4, .wiki-page-content .md h5, .wiki-page-content .md h6 {
+  color: white;
+}
+.wiki-page-content .md h1:first-of-type {
+  margin-top: 0.78125em;
 }
 
 /* Error */
