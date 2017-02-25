@@ -4,28 +4,31 @@
  *
  ************/
 
-// Layout
-.wiki-page .wiki-page-content {
-   margin: 0;
-   margin-right: 0;
-   background-color: $dark-bg;
-   padding: 20px 20px 30px;
-   margin-top: 20px;
-   border:1px solid $content-border;
-}
-
-// TOC
-.wiki-page .wiki-page-content .wiki>.toc>ul {
-   border: 1px solid $content-border;
-}
-
-// Content
-
 .wiki-page {
-	.wiki-page-content .wiki>.toc>ul ul {
-   	margin: 0px;
-   	padding-left: 15px;
-   	border-left: 1px dotted $content-border;
+
+	.wiki-page-content {
+		margin: 0;
+	   margin-right: 0;
+	   background-color: $dark-bg;
+	   padding: 20px 20px 30px;
+	   margin-top: 20px;
+	   border:1px solid $content-border;
+	   clear: left;
+
+		.wiki>.toc>ul{
+   		border: 1px solid $content-border;
+			ul {
+		   	margin: 0px;
+		   	padding-left: 15px;
+		   	border-left: 1px dotted $content-border;
+			}
+		}
+		.description h2 {
+    		color: white;
+		}
+		.pagelisting {
+		   color: white;
+		}
 	}
 	.wikititle {
 	   margin-left: 15px;

@@ -1546,16 +1546,21 @@ ul.report-reasons {
   padding: 20px 20px 30px;
   margin-top: 20px;
   border: 1px solid rgba(86, 103, 118, 0.5);
+  clear: left;
 }
-
 .wiki-page .wiki-page-content .wiki > .toc > ul {
   border: 1px solid rgba(86, 103, 118, 0.5);
 }
-
 .wiki-page .wiki-page-content .wiki > .toc > ul ul {
   margin: 0px;
   padding-left: 15px;
   border-left: 1px dotted rgba(86, 103, 118, 0.5);
+}
+.wiki-page .wiki-page-content .description h2 {
+  color: white;
+}
+.wiki-page .wiki-page-content .pagelisting {
+  color: white;
 }
 .wiki-page .wikititle {
   margin-left: 15px;
