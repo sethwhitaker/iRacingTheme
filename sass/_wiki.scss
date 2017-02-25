@@ -1,0 +1,35 @@
+/***********
+ *
+ * Wiki
+ *
+ ************/
+
+// Layout
+.wiki-page .wiki-page-content {
+   margin: 0;
+   margin-right: 0;
+   background-color: $dark-bg;
+   padding: 1px 20px 30px;
+   margin-top: 20px;
+   border:1px solid $content-border;
+}
+
+// TOC
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+   float: right;
+   padding: 11px 22px;
+   margin: 0 0 11px 22px;
+   border: 1px solid $content-border;
+   // list-style: none;
+   max-width: 300px;
+}
+
+// Content
+.wiki-page-content .md h1,
+.wiki-page-content .md h2,
+.wiki-page-content .md h3,
+.wiki-page-content .md h4,
+.wiki-page-content .md h5,
+.wiki-page-content .md h6 {
+   color: white;
+}
