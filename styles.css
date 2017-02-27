@@ -954,13 +954,19 @@ textarea:focus {
   margin-left: 20px;
 }
 
-/* User Flair Selection Box */
+/***********
+*
+* User Flair Selection Box
+*
+************/
 .flairselector {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.6);
 }
 .flairselector.drop-choices.active {
   border: 1px solid rgba(86, 103, 118, 0.5);
   display: block;
+}
+.side .flairselector.drop-choices.active {
   width: 70% !important;
   top: auto !important;
   padding: 0px !important;
@@ -974,7 +980,7 @@ textarea:focus {
   color: white;
   text-transform: capitalize;
 }
-.flairselector ul {
+.side .flairselector ul {
   display: block;
   max-width: none;
   float: none !important;

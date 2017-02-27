@@ -1,0 +1,64 @@
+/***********
+*
+* User Flair Selection Box
+*
+************/
+
+.flairselector {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.6);
+    &.drop-choices.active {
+        border: 1px solid $content-border;
+        display: block;
+        .side &{
+            width: 70% !important;
+            top: auto !important;
+            padding: 0px !important;
+            left: 50% !important;
+            transform: translateX(-50%);
+        }
+    }
+    h2 {
+        background: rgba(0, 0, 0, 0);
+        padding: 6px;
+        margin-bottom: 0px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    ul {
+        .side &{
+            display: block;
+            max-width: none;
+            float: none !important;
+            width: auto !important;
+        }
+    }
+
+    li {
+        border: none;
+        display: block!important;
+        padding: 2px 10px;
+        &:hover {
+            background-color: $blue-bg;
+            border: none;
+        }
+
+        &.selected {
+            border: none;
+            background-color: $iracing-blue;
+        }
+
+        a {
+            color: $link-color !important;
+        }
+    }
+
+
+    form {
+        border-top: solid 1px $content-border;
+        padding: 4px;
+    }
+}
+.flairoptionpane {
+    max-height: 400px;
+}
