@@ -129,7 +129,9 @@ body >.content .link .rank,
     }
     &.thing.stickied {
         .midcol.likes{
-            margin-left:61px;
+            .hot-page &{
+                margin-left:61px;
+            }
             .single-page &{
                 margin-left:15px;
             }

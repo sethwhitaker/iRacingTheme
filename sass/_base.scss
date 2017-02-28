@@ -104,6 +104,10 @@ button[name="save"]:hover{
     border-color: #55599c;
     color: white;
 }
+.infobar.mellow {
+    background-color: $info-bg;
+    border-color: #55599c;
+}
 .content.submit .info-notice {
     max-width: 540px;
 }

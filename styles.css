@@ -108,6 +108,11 @@ button[name="save"]:hover {
   color: white;
 }
 
+.infobar.mellow {
+  background-color: rgba(45, 53, 137, 0.6);
+  border-color: #55599c;
+}
+
 .content.submit .info-notice {
   max-width: 540px;
 }
@@ -1239,7 +1244,7 @@ body > .content .link .rank,
 .link.last-clicked .flat-list {
   border-color: rgba(171, 207, 231, 0.5);
 }
-.link.thing.stickied .midcol.likes {
+.hot-page .link.thing.stickied .midcol.likes {
   margin-left: 61px;
 }
 .single-page .link.thing.stickied .midcol.likes {
