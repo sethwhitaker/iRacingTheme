@@ -959,7 +959,7 @@ textarea:focus {
   margin-left: 20px;
 }
 
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"],
+a[href="https://www.youtube.com/user/iRacingTV"],
 a[href="https://www.twitter.com/iRacing"],
 a[href="https://www.facebook.com/iracing"],
 a[href="https://www.instagram.com/iracingofficial"],
@@ -973,7 +973,7 @@ a[href="http://www.iracing.com/live"] {
   font-size: 0;
   margin: 15px 4px 0px 0px;
 }
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"]:hover,
+a[href="https://www.youtube.com/user/iRacingTV"]:hover,
 a[href="https://www.twitter.com/iRacing"]:hover,
 a[href="https://www.facebook.com/iracing"]:hover,
 a[href="https://www.instagram.com/iracingofficial"]:hover,
@@ -982,7 +982,7 @@ a[href="http://www.tradingpaints.com"]:hover,
 a[href="http://www.iracing.com/live"]:hover {
   cursor: pointer;
 }
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"]:hover:after,
+a[href="https://www.youtube.com/user/iRacingTV"]:hover:after,
 a[href="https://www.twitter.com/iRacing"]:hover:after,
 a[href="https://www.facebook.com/iracing"]:hover:after,
 a[href="https://www.instagram.com/iracingofficial"]:hover:after,
@@ -995,13 +995,13 @@ a[href="http://www.iracing.com/live"]:hover:after {
   font-size: 12px;
 }
 
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"] {
+a[href="https://www.youtube.com/user/iRacingTV"] {
   background-position: 0px 0px;
 }
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"]:hover {
+a[href="https://www.youtube.com/user/iRacingTV"]:hover {
   background-position: 0px -32px;
 }
-a[href="https://www.youtube.com/channel/UCPEcqkRG-kf2Vk6Rn_2WZSQ"]:hover:after {
+a[href="https://www.youtube.com/user/iRacingTV"]:hover:after {
   content: "iRacing Youtube";
 }
 
