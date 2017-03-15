@@ -157,6 +157,63 @@ body >.content .link .rank,
     }
 }
 
+
+.linkflairlabel {
+    padding: 1px 4px;
+}
+
+.link .title .linkflairlabel {
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right: 0;
+    padding: 4px 8px;
+    text-overflow:initial;
+    max-width: none;
+}
+$linkflair: (
+    "media":(
+        color: desaturate($iracing-blue, 20%),
+        border: lighten(desaturate($iracing-blue, 20%),12%),
+        textcolor: white
+    ),
+    "talk":(
+        color: desaturate($iracing-green, 40%),
+        border: lighten(desaturate($iracing-green, 40%),12%),
+        textcolor: white
+    ),
+    "updates":(
+        color: desaturate($iracing-red, 40%),
+        border: lighten(desaturate($iracing-red, 40%),12%),
+        textcolor: white
+    ),
+    "hardware":(
+        color: #795548,
+        border: #a27363,
+        textcolor: white
+    ),
+    "sim":(
+        color: $link-color,
+        border: lighten($link-color, 12%),
+        textcolor: white
+    ),
+    "misc":(
+        color: #f5f5f5,
+        border: #dddddd,
+        textcolor: #555555
+    )
+);
+
+@each $cats, $catsmap in $linkflair{
+    .linkflair-#{$cats} .linkflairlabel,
+    .flairsample-right .linkflair-#{$cats} .linkflairlabel,
+    .flairsample-left .linkflair-#{$cats} .linkflairlabel{
+        background-color: map-get($catsmap, 'color');
+        color: map-get($catsmap, 'textcolor');
+        border-color: map-get($catsmap, 'border');
+    }
+}
+
 .entry {
     overflow: initial;
     margin-left: 183px;

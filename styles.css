@@ -1268,6 +1268,68 @@ body > .content .link .rank,
   border: 1px solid #3f48b6;
 }
 
+.linkflairlabel {
+  padding: 1px 4px;
+}
+
+.link .title .linkflairlabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  padding: 4px 8px;
+  text-overflow: initial;
+  max-width: none;
+}
+
+.linkflair-media .linkflairlabel,
+.flairsample-right .linkflair-media .linkflairlabel,
+.flairsample-left .linkflair-media .linkflairlabel {
+  background-color: #42467a;
+  color: white;
+  border-color: #575da2;
+}
+
+.linkflair-talk .linkflairlabel,
+.flairsample-right .linkflair-talk .linkflairlabel,
+.flairsample-left .linkflair-talk .linkflairlabel {
+  background-color: #247e3c;
+  color: white;
+  border-color: #32ad53;
+}
+
+.linkflair-updates .linkflairlabel,
+.flairsample-right .linkflair-updates .linkflairlabel,
+.flairsample-left .linkflair-updates .linkflairlabel {
+  background-color: #c24f55;
+  color: white;
+  border-color: #d17d81;
+}
+
+.linkflair-hardware .linkflairlabel,
+.flairsample-right .linkflair-hardware .linkflairlabel,
+.flairsample-left .linkflair-hardware .linkflairlabel {
+  background-color: #795548;
+  color: white;
+  border-color: #a27363;
+}
+
+.linkflair-sim .linkflairlabel,
+.flairsample-right .linkflair-sim .linkflairlabel,
+.flairsample-left .linkflair-sim .linkflairlabel {
+  background-color: #829bae;
+  color: white;
+  border-color: #a7b9c6;
+}
+
+.linkflair-misc .linkflairlabel,
+.flairsample-right .linkflair-misc .linkflairlabel,
+.flairsample-left .linkflair-misc .linkflairlabel {
+  background-color: #f5f5f5;
+  color: #555555;
+  border-color: #dddddd;
+}
+
 .entry {
   overflow: initial;
   margin-left: 183px;
