@@ -994,6 +994,15 @@ a[href="http://www.iracing.com/live"]:hover:after {
   position: absolute;
   font-size: 12px;
 }
+a[href="https://www.youtube.com/user/iRacingTV"] + br,
+a[href="https://www.twitter.com/iRacing"] + br,
+a[href="https://www.facebook.com/iracing"] + br,
+a[href="https://www.instagram.com/iracingofficial"] + br,
+a[href="http://members.iracing.com/jforum/forums/list.page"] + br,
+a[href="http://www.tradingpaints.com"] + br,
+a[href="http://www.iracing.com/live"] + br {
+  display: none;
+}
 
 a[href="https://www.youtube.com/user/iRacingTV"] {
   background-position: 0px 0px;
