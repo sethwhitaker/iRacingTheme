@@ -53,4 +53,14 @@
 	    border-color: $content-border !important;
 	    padding: 10px 5px 0 10px !important;
 	}
+	.res-voteEnhancements-highlightScores span.score{
+    	font-weight: normal;
+    	color: #888;
+	}
+
+	a.voteWeight {
+		background-color: transparent !important;
+		color: $link-color;
+		font-weight: bold;
+	}
 }

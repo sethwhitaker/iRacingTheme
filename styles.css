@@ -1857,3 +1857,14 @@ ul.report-reasons {
   border-color: rgba(86, 103, 118, 0.5) !important;
   padding: 10px 5px 0 10px !important;
 }
+.res .res-voteEnhancements-highlightScores span.score,
+.res-nightmode .res-voteEnhancements-highlightScores span.score {
+  font-weight: normal;
+  color: #888;
+}
+.res a.voteWeight,
+.res-nightmode a.voteWeight {
+  background-color: transparent !important;
+  color: #829bae;
+  font-weight: bold;
+}
