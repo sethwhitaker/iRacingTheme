@@ -311,34 +311,113 @@ ul.report-reasons {
     }
 }
 
-.expando-button {
-    // position: absolute;
-    // height: 23px;
-    // width: 23px;
-    // margin: 0;
-    // background: none;
-    // top: 55px;
-    // right: 10px;
-    &.collapsed.selftext,
-    &.collapsed.selftext:hover,
-    &.collapsed.video,
-    &.collapsed.video:hover,
-    &.expanded.selftext,
-    &.expanded.selftext:hover,
-    &.expanded.video,
-    &.expanded.video:hover{
-        background-image: url(%%sprite-expando%%);
-        // background-position: 0px -145px;
-        // background-repeat: no-repeat;
-    }
-}
 .expando {
-    /*clear: left;*/
-    // margin: 0 0 0 47px;
     margin: 0 0 0 -135px;
     padding: 5px 15px;
     border-top: 1px solid rgba(171,207,231,0.2);
 }
 
+.expando-button.expanded.video,
+.expando-button.expanded.selftext,
+.expando-button.expanded.crosspost{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -445px;
+    background-repeat:no-repeat
+}
+
+.expando-button.expanded.video:hover,
+.expando-button.expanded.selftext:hover,
+.expando-button.expanded.crosspost:hover{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -416px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.selftext{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -561px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.selftext:hover{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -532px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.video{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -503px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.video:hover{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -474px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.crosspost{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -619px;
+    background-repeat:no-repeat}
+
+.expando-button.collapsed.crosspost:hover{
+    background-image:url(%%sprite-expando%%);
+    background-position:0px -590px;
+    background-repeat:no-repeat
+}
+@media only screen and (min-resolution:2dppx),only screen and (-webkit-min-device-pixel-ratio:2){
+    .expando-button{
+        background-size:100%
+    }
+    .expando-button.expanded.video,
+    .expando-button.expanded.selftext,
+    .expando-button.expanded.crosspost{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -26px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.expanded.video:hover,
+    .expando-button.expanded.selftext:hover,
+    .expando-button.expanded.crosspost:hover{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px 0px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.collapsed.selftext{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -130px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.collapsed.selftext:hover{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -104px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.collapsed.video{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -78px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+     .expando-button.collapsed.video:hover{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -52px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.collapsed.crosspost{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -182px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+    .expando-button.collapsed.crosspost:hover{
+        background-image:url(%%sprite-expando%%);
+        background-position:0px -156px;
+        background-repeat:no-repeat;
+        background-size:23px 324px;
+    }
+}
 
 
