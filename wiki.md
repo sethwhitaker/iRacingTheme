@@ -1,0 +1,73 @@
+#iRacing Wiki Outline
+
+- Index
+    - iRacing Beginner Guide
+    - Downloading/Installing
+    - The Website
+    - Home
+    - Find Official Races
+    - Hosted
+    - Leagues
+    - Teams
+    - Store
+        - Cars
+        - Tracks
+    - Account
+    - Results & Stats
+    - Help
+        - The Sporting Code
+    - Forum
+    - Settings
+- Test Drive
+- The Sim
+    - Calibration
+    - Settings
+        - FOV
+        - Graphics
+        - Sound
+- Hardware
+    - Controllers
+    - Wheels
+- Rating Systems
+    - Saftey Rating (SR)
+        - Incident Points
+    - iRating (iR)
+    - TT Rating
+- Rookies
+- Licenses
+    - Career Ladders
+        - NASCAR Ladder
+        - Oval Short Track Ladder
+        - Open Wheel Oval Ladder
+        - Dirt Oval Ladder
+        - Road GT Ladder
+        - Road Open Wheel Ladder
+        - Multi-Class Ladder
+    - Promotions
+        - End of Season Promotion
+        - FastTrack Promotion
+- Sessions
+    - Practice
+    - Warmup
+    - Qualifying
+    - Race
+        - SOF (Strength Of Field)
+        - Splits/Registration
+- Series/Seasons
+    - Official
+        - Championship Points
+    - Unofficial
+    - End of Season (Week 13)
+        - Official Series
+        - Fun Series
+        - Server Stability
+    - Participation Credits
+- Painting
+    - Paint Shop
+    - Trading Paints
+    - Templates
+- Replays
+    - Saving a Replay
+- Setups
+    - SetupSync
+    - VRS
