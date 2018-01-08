@@ -1276,6 +1276,21 @@ body > .content .link .rank,
   color: white;
   border: 1px solid #3f48b6;
 }
+.flair.flair-lsrtv,
+.link .flair.flair-lsrtv {
+  background-color: #ff0202;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f94848;
+}
+.flair.flair-racespot,
+.link .flair.flair-racespot {
+  background-color: #ffd200;
+  color: #333;
+  border: 1px solid #ffd200;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 .linkflairlabel {
   padding: 1px 4px;
